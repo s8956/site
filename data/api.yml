@@ -1,0 +1,53 @@
+# ----------------------------------------------------------------------------------------------------------------------
+# User Agent.
+# ----------------------------------------------------------------------------------------------------------------------
+
+user_agent: 'Mozilla/5.0 (Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0'
+
+# ----------------------------------------------------------------------------------------------------------------------
+# GitHub.
+#
+# user - username.
+# token - personal access token (base64). Token from unit22bot.
+#
+# Help:
+#   https://docs.github.com/en/rest
+# Example:
+#   curl -H 'Authorization: token [TOKEN]' 'https://api.github.com/users/[USER]/repos'
+# ----------------------------------------------------------------------------------------------------------------------
+
+github:
+  token: 'Z2hwX2V5MUFLdWxpdXE0MFJNSUJ2NU1XS3ZhNmhWeDRLeDBjOVc0UA=='
+
+# ----------------------------------------------------------------------------------------------------------------------
+# VK.
+#
+# version - api version.
+# app:
+#   id - application ID.
+# group:
+#   id - group ID.
+# group:
+#   fields - get group fields.
+# token - service access key (base64).
+#
+# Help:
+#   https://dev.vk.com/method
+# Example:
+#   curl 'https://api.vk.com/method/groups.getById?group_ids=[GROUP_ID01],[GROUP_ID02]&fields=[FIELDS]&access_token=[TOKEN]&v=[VERSION]'
+# ----------------------------------------------------------------------------------------------------------------------
+
+vk:
+  version: '5.131'
+  app:
+    id: ''
+  token: ''
+
+# ----------------------------------------------------------------------------------------------------------------------
+# Static Forms.
+#
+# https://staticforms.xyz
+# ----------------------------------------------------------------------------------------------------------------------
+
+static_forms:
+  token: 'NzNlOGJlYzItMmYyYS00MDYyLThmMDEtYzY1NzljZmU3ODM2'

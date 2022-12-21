@@ -1,0 +1,12 @@
+[submodule "content"]
+  path = content
+  url = https://github.com/site-0003/content.git
+[submodule "themes/ui-custom"]
+  path = themes/ui-custom
+  url = https://github.com/site-0003/ui-custom.git
+[submodule "themes/ui-library"]
+  path = themes/ui-library
+  url = https://github.com/pkgstore/hugo-ui-library.git
+[submodule "themes/ui-shortcodes"]
+  path = themes/ui-shortcodes
+  url = https://github.com/pkgstore/hugo-ui-shortcodes.git

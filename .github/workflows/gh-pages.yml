@@ -1,0 +1,47 @@
+name: 'GitHub Pages'
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+env:
+  OWNER: '${{ github.repository_owner }}'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: 'DEPLOY'
+    permissions:
+      contents: 'write'
+    concurrency:
+      group: '${{ github.workflow }}-${{ github.ref }}'
+    steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
+          fetch-depth: 0
+      - name: 'Checkout submodules'
+        run: git submodule update --recursive --remote --merge
+      - name: 'Setup Hugo'
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: 'Build'
+        run: hugo --minify
+      - name: 'Deploy'
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          personal_token: '${{ secrets.BOT_GITHUB_TOKEN }}'
+          external_repository: '${{ env.OWNER }}/${{ env.OWNER }}.github.io'
+          publish_branch: 'main'
+          publish_dir: 'public'
+          cname: 'lib.onl'
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
