@@ -9,4 +9,4 @@
   url = ../ui-custom.git
 [submodule "themes/ui-shortcodes"]
   path = themes/ui-shortcodes
-  url = ../pkgstore/hugo-ui-shortcodes.git
+  url = ../../pkgstore/hugo-ui-shortcodes.git
