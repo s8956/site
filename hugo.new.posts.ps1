@@ -13,7 +13,7 @@ function Open-INIT() {
 function New-Hugo() {
   $type = "posts"
 
-  .\hugo.exe new "$($type)/$(_Get-Year)/$(_Get-Month)/$(_Get-Timestamp)_$(_Get-Random)"
+  .\hugo.exe new "$($type)/$(_Get-Year)/$(_Get-Month)/$(_Get-Timestamp).$(_Get-Random)"
   Read-Host -Prompt "Press ENTER or CTRL+C to EXIT..."
 }
 
