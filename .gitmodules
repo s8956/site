@@ -4,9 +4,6 @@
 [submodule "themes/ui-library"]
   path = themes/ui-library
   url = ../ui-library.git
-[submodule "themes/ui-custom"]
-  path = themes/ui-custom
-  url = ../ui-custom.git
 [submodule "themes/ui-shortcodes"]
   path = themes/ui-shortcodes
   url = ../../pkgstore/hugo-ui-shortcodes.git
