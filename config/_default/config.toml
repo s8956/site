@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------------------------------------------------------
 
 baseURL = 'https://lib.onl/'
-theme = ['ui-shortcodes', 'ui-custom', 'ui-library']
+theme = ['ui-shortcodes', 'ui-library']
 DefaultContentLanguage = 'ru'
 defaultContentLanguageInSubdir = true
 disableHugoGeneratorInject = true
