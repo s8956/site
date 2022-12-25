@@ -25,7 +25,7 @@ init() {
 
 hugo_new() {
   local type="posts"
-  ${hugo} new "${type}/$( _year )/$( _month )/$( _timestamp ).$( _random )"
+  ${hugo} new "${type}/$( _year )/$( _month )/$( _timestamp )_$( _random )"
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
