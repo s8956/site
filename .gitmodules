@@ -1,9 +1,12 @@
 [submodule "content"]
   path = content
   url = ../content.git
-[submodule "themes/ui-library"]
-  path = themes/ui-library
-  url = ../ui-library.git
-[submodule "themes/ui-shortcodes"]
-  path = themes/ui-shortcodes
-  url = ../../pkgstore/hugo-ui-shortcodes.git
+[submodule "themes/ui-custom"]
+  path = themes/ui-custom
+  url = ../ui-custom.git
+[submodule "themes/ui-blog"]
+  path = themes/ui-blog
+  url = https://github.com/pkgstore/hugo-ui-blog.git
+[submodule "themes/ui-shortcode"]
+  path = themes/ui-shortcode
+  url = https://github.com/pkgstore/hugo-ui-shortcode.git

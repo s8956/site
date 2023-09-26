@@ -1,0 +1,38 @@
+main:
+  - name: 'Posts'
+    pre: 'fas fa-book'
+    url: '/en/posts/'
+    identifier: 'blog'
+    weight: 10
+  - name: 'Archive'
+    pre: 'fas fa-archive'
+    url: '/en/archive/'
+    identifier: 'archive'
+    weight: 100
+  - name: 'About'
+    pre: 'fas fa-info-circle'
+    url: '/en/about/'
+    identifier: 'about'
+    weight: 999
+  - name: 'META'
+    pre: 'fas fa-list'
+    identifier: 'meta'
+    weight: 9999
+  - name: 'Authors'
+    pre: 'fas fa-user-circle'
+    url: '/en/authors/'
+    identifier: 'authors'
+    weight: 10
+    parent: 'meta'
+  - name: 'Categories'
+    pre: 'fas fa-folder-open'
+    url: '/en/categories/'
+    identifier: 'categories'
+    weight: 20
+    parent: 'meta'
+  - name: 'Tags'
+    pre: 'fas fa-tags'
+    url: '/en/tags/'
+    identifier: 'tags'
+    weight: 30
+    parent: 'meta'

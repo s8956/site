@@ -1,0 +1,38 @@
+main:
+  - name: 'Статьи'
+    pre: 'fas fa-book'
+    url: '/ru/posts/'
+    identifier: 'blog'
+    weight: 10
+  - name: 'Архив'
+    pre: 'fas fa-archive'
+    url: '/ru/archive/'
+    identifier: 'archive'
+    weight: 100
+  - name: 'О проекте'
+    pre: 'fas fa-info-circle'
+    url: '/ru/about/'
+    identifier: 'about'
+    weight: 999
+  - name: 'META'
+    pre: 'fas fa-list'
+    identifier: 'meta'
+    weight: 9999
+  - name: 'Авторы'
+    pre: 'fas fa-user-circle'
+    url: '/ru/authors/'
+    identifier: 'authors'
+    weight: 10
+    parent: 'meta'
+  - name: 'Категории'
+    pre: 'fas fa-folder-open'
+    url: '/ru/categories/'
+    identifier: 'categories'
+    weight: 20
+    parent: 'meta'
+  - name: 'Теги'
+    pre: 'fas fa-tags'
+    url: '/ru/tags/'
+    identifier: 'tags'
+    weight: 30
+    parent: 'meta'

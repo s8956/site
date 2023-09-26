@@ -3,3 +3,4 @@ cache/
 public/
 resources/
 .hugo_build.lock
+hugo.exe
