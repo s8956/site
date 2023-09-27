@@ -67,10 +67,11 @@ permalinks:
 markup:
   goldmark:
     parser:
-      autoHeadingID: false
+      autoHeadingID: 0
   highlight:
-    lineNos: true
-    noClasses: false
+    codeFences: 0
+    lineNos: 1
+    noClasses: 0
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Minify.
