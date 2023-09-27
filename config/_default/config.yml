@@ -8,14 +8,14 @@ theme:
   - 'ui-custom'
   - 'ui-blog'
 DefaultContentLanguage: 'ru'
-defaultContentLanguageInSubdir: 1
-disableHugoGeneratorInject: 1
+defaultContentLanguageInSubdir: true
+disableHugoGeneratorInject: true
 paginate: 10
-enableEmoji: 1
-pygmentsUseClasses: 1
-pygmentsCodeFences: 1
+enableEmoji: true
+pygmentsUseClasses: true
+pygmentsCodeFences: true
 publishDir: 'public'
-enableRobotsTXT: 1
+enableRobotsTXT: true
 rssLimit: 10
 
 # -------------------------------------------------------------------------------------------------------------------- #
@@ -67,21 +67,21 @@ permalinks:
 markup:
   goldmark:
     parser:
-      autoHeadingID: 0
+      autoHeadingID: false
   highlight:
-    codeFences: 0
-    lineNos: 1
-    noClasses: 0
+    codeFences: false
+    lineNos: true
+    noClasses: false
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Minify.
 # -------------------------------------------------------------------------------------------------------------------- #
 
 minify:
-  minifyOutput: 1
+  minifyOutput: true
   tdewolff:
     html:
-      keepWhitespace: 0
+      keepWhitespace: false
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Languages.
