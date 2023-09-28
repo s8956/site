@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------------------------------------------------- #
 
 baseURL: 'https://lib.onl/'
-theme: ['ui-shortcode', 'ui-custom', 'ui-blog']
+theme: [ 'ui-shortcode', 'ui-custom', 'ui-blog' ]
 DefaultContentLanguage: 'ru'
 defaultContentLanguageInSubdir: true
 disableHugoGeneratorInject: true
@@ -27,8 +27,8 @@ ignoreErrors:
 # -------------------------------------------------------------------------------------------------------------------- #
 
 outputs:
-  home: ['html', 'rss']
-  page: ['html']
+  home: [ 'html', 'rss' ]
+  page: [ 'html' ]
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Sitemap.
