@@ -50,11 +50,11 @@ node:
       crop: 'entropy'
       fit: 'crop'
       lg:
-        width: 1600
-        height: 900
+        width: '1600'
+        height: '900'
       md:
-        width: 160
-        height: 160
+        width: '160'
+        height: '160'
   tabs:
     info:
       enabled: true
@@ -72,6 +72,19 @@ node:
         enabled: true
     license:
       enabled: true
+    comments:
+      enabled: true
+      giscus:
+        repo: 'site-0003/comments'
+        repo_id: 'R_kgDOKaWVNA'
+        category: 'Site'
+        category_id: 'DIC_kwDOKaWVNM4CZwyI'
+        mapping: 'pathname'
+        strict: '1'
+        reactions: '1'
+        metadata: '0'
+        position: 'top'
+        theme: 'preferred_color_scheme'
     share:
       enabled: true
       social:

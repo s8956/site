@@ -13,7 +13,7 @@ pygmentsUseClasses: true
 pygmentsCodeFences: true
 publishDir: 'public'
 enableRobotsTXT: true
-rssLimit: 10
+rssLimit: 50
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Errors.
