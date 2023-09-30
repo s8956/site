@@ -59,9 +59,6 @@ permalinks:
 # -------------------------------------------------------------------------------------------------------------------- #
 
 markup:
-  goldmark:
-    parser:
-      autoHeadingID: false
   highlight:
     codeFences: false
     lineNos: true
