@@ -60,8 +60,7 @@ permalinks:
 
 markup:
   highlight:
-    codeFences: false
-    lineNos: true
+    codeFences: true
     noClasses: false
   tableOfContents:
     endLevel: 4
