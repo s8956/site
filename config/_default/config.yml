@@ -63,6 +63,9 @@ markup:
     codeFences: false
     lineNos: true
     noClasses: false
+  tableOfContents:
+    endLevel: 4
+    startLevel: 2
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Minify.
