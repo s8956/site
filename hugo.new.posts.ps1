@@ -13,7 +13,7 @@ function Open-INIT() {
 function New-Hugo() {
   $type = "posts"
 
-  .\hugo.exe new "$($type)/$(_Get-Year)/$(_Get-Month)/$(_Get-Timestamp)"
+  .\hugo.exe new "$($type)/$(_Get-Year)/$(_Get-Month)/$(_Get-Timestamp)_$(_Get-Random)"
   Read-Host -Prompt "Press ENTER or CTRL+C to EXIT..."
 }
 
@@ -41,7 +41,7 @@ function _Get-Timestamp() {
 
 # Random.
 function _Get-Random() {
-  $random = Get-Random -Minimum 100000 -Maximum 999999
+  $random = Get-Random -Minimum 1000 -Maximum 9999
   return $random
 }
 
