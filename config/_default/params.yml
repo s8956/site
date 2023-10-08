@@ -9,8 +9,8 @@ author:
 manifest:
   short_name: 'Lib.Onl'
   color:
-    background: '#ffffff'
-    theme: '#ffffff'
+    background: '#f8f9fa'
+    theme: '#f8f9fa'
   categories:
     - 'books'
     - 'education'
@@ -18,7 +18,7 @@ manifest:
 
 ui:
   color:
-    theme: '#ffffff'
+    theme: '#f8f9fa'
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # API.
