@@ -31,7 +31,15 @@ ui:
 api:
   user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
   github:
+    url: 'https://api.github.com'
+    user: 'ghapibot'
+    email: 'apibot@bk.ru'
     token: 'Z2hwX3dReDZ3OVpTRjVIejlENUQ3ck9JV0hOOGVxU3NDRjQxUzF3Zw=='
+  gitlab:
+    url: 'https://gitlab.com/api/v4'
+    user: 'glapibot'
+    email: 'apibot@bk.ru'
+    token: 'Z2xwYXQtZ1Njc0puNmJpVFdUZnpoc2Jnelg='
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Search.
