@@ -7,7 +7,9 @@ author:
   email: 'mail@lib.onl'
 
 manifest:
-  short_name: 'Lib.Onl'
+  short_name:
+    en: 'Lib.Onl'
+    ru: 'Lib.Onl'
   color:
     background: '#f8f9fa'
     theme: '#f8f9fa'
