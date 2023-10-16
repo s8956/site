@@ -113,7 +113,7 @@ node:
         height: '160'
   tabs:
     source:
-      enabled: true
+      enabled: false
     changelog:
       enabled: true
     info:
