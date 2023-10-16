@@ -5,13 +5,6 @@
 sections:
   - 'posts'
 
-images:
-  - 'favicon-512.png'
-
-author:
-  name: 'Kitsune Solar'
-  email: 'mail@lib.onl'
-
 manifest:
   short_name:
     en: 'Lib.Onl'
@@ -33,6 +26,13 @@ ui:
 # -------------------------------------------------------------------------------------------------------------------- #
 # SEO.
 # -------------------------------------------------------------------------------------------------------------------- #
+
+author:
+  name: 'Kitsune Solar'
+  email: 'mail@lib.onl'
+
+images:
+  - 'favicon-512.png'
 
 organization:
   logo: 'img/logo.min.svg'
