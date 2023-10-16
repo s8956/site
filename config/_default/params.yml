@@ -114,6 +114,8 @@ node:
   tabs:
     source:
       enabled: true
+    changelog:
+      enabled: true
     info:
       enabled: true
       categories:
