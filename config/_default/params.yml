@@ -132,9 +132,9 @@ node:
       enabled: true
       giscus:
         repo: 'site-0003/comments'
-        repo_id: 'R_kgDOKaWVNA'
+        repo_id: 'R_kgDOKgu0Tg'
         category: 'Site'
-        category_id: 'DIC_kwDOKaWVNM4CZwyI'
+        category_id: 'DIC_kwDOKgu0Ts4CaJ2z'
         mapping: 'pathname'
         strict: '1'
         reactions: '1'
