@@ -44,7 +44,7 @@ _month() {
 
 # Timestamp.
 _timestamp() {
-  ${date} -u '+%s%N' | ${cut} -b1-13
+  echo $(( $( ${date} -u '+%s%N' ) / 1000000 ))
 }
 
 # Random.
