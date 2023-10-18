@@ -8,7 +8,6 @@ DefaultContentLanguage: 'ru'
 defaultContentLanguageInSubdir: true
 disableHugoGeneratorInject: true
 paginate: 10
-enableEmoji: true
 pygmentsUseClasses: true
 pygmentsCodeFences: true
 publishDir: 'public'
