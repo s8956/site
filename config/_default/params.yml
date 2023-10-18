@@ -82,12 +82,12 @@ taxonomy:
     grid:
       cols: 2
     cover:
-      size: '120px'
+      size: '128px'
       avatar:
-        size: '256'
+        size: '196'
   categories:
     grid:
-      cols: 3
+      cols: 2
     cover:
       size: '96px'
       icon:
