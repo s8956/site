@@ -42,13 +42,17 @@ outputFormats:
     baseName: 'manifest'
     mediaType: 'application/json'
     rel: 'manifest'
+  search:
+    baseName: 'search'
+    mediaType: 'application/json'
+    isPlainText: true
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Outputs.
 # -------------------------------------------------------------------------------------------------------------------- #
 
 outputs:
-  home: [ 'html', 'rss', 'OpenSearch', 'manifest' ]
+  home: [ 'html', 'rss', 'OpenSearch', 'manifest', 'search' ]
   page: [ 'html', 'json' ]
 
 # -------------------------------------------------------------------------------------------------------------------- #
