@@ -34,7 +34,7 @@ mediaTypes:
 # ----------------------------------------------------------------------------------------------------------------------
 
 outputFormats:
-  OpenSearch:
+  openSearch:
     baseName: 'opensearch'
     mediaType: 'application/opensearchdescription+xml'
     rel: 'search'
@@ -55,7 +55,7 @@ outputFormats:
 # -------------------------------------------------------------------------------------------------------------------- #
 
 outputs:
-  home: [ 'html', 'rss', 'OpenSearch', 'manifest', 'search' ]
+  home: [ 'html', 'rss', 'openSearch', 'manifest', 'search' ]
   page: [ 'html', 'json' ]
 
 # -------------------------------------------------------------------------------------------------------------------- #
