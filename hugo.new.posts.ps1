@@ -23,25 +23,25 @@ function New-Hugo() {
 
 # Year.
 function _Get-Year() {
-  $year = Get-Date -Format "yyyy"
+  $year = (Get-Date -Format "yyyy")
   return $year
 }
 
 # Month.
 function _Get-Month() {
-  $month = Get-Date -Format "MM"
+  $month = (Get-Date -Format "MM")
   return $month
 }
 
 # Timestamp.
 function _Get-Timestamp() {
-  $timestamp = [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds()
+  $timestamp = ([DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds())
   return $timestamp
 }
 
 # Random.
 function _Get-Random() {
-  $random = Get-Random -Minimum 1000 -Maximum 9999
+  $random = (Get-Random -Minimum 1000 -Maximum 9999)
   return $random
 }
 

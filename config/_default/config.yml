@@ -38,14 +38,17 @@ outputFormats:
     baseName: 'opensearch'
     mediaType: 'application/opensearchdescription+xml'
     rel: 'search'
+    notAlternative: true
   manifest:
     baseName: 'manifest'
     mediaType: 'application/json'
     rel: 'manifest'
+    notAlternative: true
   search:
     baseName: 'search'
     mediaType: 'application/json'
     isPlainText: true
+    notAlternative: true
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Outputs.
