@@ -1,19 +1,21 @@
+#Requires -Version 7.2
+
 # -------------------------------------------------------------------------------------------------------------------- #
 # INITIALIZATION.
 # -------------------------------------------------------------------------------------------------------------------- #
 
-function Open-INIT() {
-  New-Hugo
+function Start-Script() {
+  New-HugoPost
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # HUGO: NEW CONTENT.
 # -------------------------------------------------------------------------------------------------------------------- #
 
-function New-Hugo() {
-  $type = "posts"
+function New-HugoPost() {
+  $type = 'posts'
 
-  .\hugo.exe new "$($type)/$(_Get-Year)/$(_Get-Month)/$(_Get-Timestamp)_$(_Get-Random)"
+  .\hugo.exe new "$($type)/$(Get-HugoYear)/$(Get-HugoMonth)/$(Get-HugoTimestamp)_$(Get-HugoRandom)"
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
@@ -21,31 +23,31 @@ function New-Hugo() {
 # -------------------------------------------------------------------------------------------------------------------- #
 
 # Year.
-function _Get-Year() {
-  $year = (Get-Date -Format "yyyy")
+function Get-HugoYear() {
+  $year = (Get-Date -Format 'yyyy')
   return $year
 }
 
 # Month.
-function _Get-Month() {
-  $month = (Get-Date -Format "MM")
+function Get-HugoMonth() {
+  $month = (Get-Date -Format 'MM')
   return $month
 }
 
 # Timestamp.
-function _Get-Timestamp() {
+function Get-HugoTimestamp() {
   $timestamp = ([DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds())
   return $timestamp
 }
 
 # Random.
-function _Get-Random() {
+function Get-HugoRandom() {
   $random = (Get-Random -Minimum 1000 -Maximum 9999)
   return $random
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
-# -------------------------------------------------< INIT FUNCTIONS >------------------------------------------------- #
+# -------------------------------------------------< RUNNING SCRIPT >------------------------------------------------- #
 # -------------------------------------------------------------------------------------------------------------------- #
 
-Open-INIT
+Start-Script
