@@ -36,7 +36,7 @@ function Get-HugoMonth() {
 
 # Timestamp.
 function Get-HugoTimestamp() {
-  $timestamp = "$(([DateTimeOffset]::Now.ToUnixTimeSeconds()))"
+  $timestamp = "$([DateTimeOffset]::Now.ToUnixTimeMilliseconds())"
   return $timestamp
 }
 
