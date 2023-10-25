@@ -24,25 +24,25 @@ function New-HugoPost() {
 
 # Year.
 function Get-HugoYear() {
-  $year = (Get-Date -Format 'yyyy')
+  $year = "$(Get-Date -Format 'yyyy')"
   return $year
 }
 
 # Month.
 function Get-HugoMonth() {
-  $month = (Get-Date -Format 'MM')
+  $month = "$(Get-Date -Format 'MM')"
   return $month
 }
 
 # Timestamp.
 function Get-HugoTimestamp() {
-  $timestamp = ([DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds())
+  $timestamp = "$(([DateTimeOffset]::Now.ToUnixTimeSeconds()))"
   return $timestamp
 }
 
 # Random.
 function Get-HugoRandom() {
-  $random = (Get-Random -Minimum 1000 -Maximum 9999)
+  $random = "$(Get-Random -Minimum 1000 -Maximum 9999)"
   return $random
 }
 
