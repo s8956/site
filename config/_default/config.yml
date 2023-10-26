@@ -51,7 +51,7 @@ outputFormats:
     notAlternative: true
   turbo:
     baseName: 'turbo'
-    mediaType: 'application/rss'
+    mediaType: 'application/rss+xml'
     notAlternative: true
 
 # -------------------------------------------------------------------------------------------------------------------- #
