@@ -7,7 +7,7 @@ theme: [ 'ui-shortcode', 'ui-custom', 'ui-blog' ]
 DefaultContentLanguage: 'ru'
 defaultContentLanguageInSubdir: true
 disableHugoGeneratorInject: true
-paginate: 10
+paginate: 20
 pygmentsUseClasses: true
 pygmentsCodeFences: true
 publishDir: 'public'
