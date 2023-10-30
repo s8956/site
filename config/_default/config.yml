@@ -12,6 +12,7 @@ pygmentsUseClasses: true
 pygmentsCodeFences: true
 publishDir: 'public'
 enableRobotsTXT: true
+enableGitInfo: true
 rssLimit: 50
 
 # -------------------------------------------------------------------------------------------------------------------- #
