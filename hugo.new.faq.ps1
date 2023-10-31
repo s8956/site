@@ -13,7 +13,7 @@ function Start-Script() {
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function New-HugoPost() {
-  $type = 'qna'
+  $type = 'faq'
 
   .\hugo.exe new "$($type)/$(Get-HugoYear)/$(Get-HugoMonth)/$(Get-HugoTimestamp)_$(Get-HugoRandom)"
 }
