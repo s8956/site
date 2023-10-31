@@ -6,7 +6,7 @@ main:
     weight: 10
   - name: 'Q&A'
     pre: 'fas fa-circle-question'
-    url: '/ru/qna/'
+    url: '/ru/faq/'
     identifier: 'qna'
     weight: 20
   - name: 'Архив'
