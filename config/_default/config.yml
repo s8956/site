@@ -99,7 +99,7 @@ markup:
     startLevel: 2
   goldmark:
     parser:
-      autoHeadingID: false
+      autoHeadingID: true
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Minify.
