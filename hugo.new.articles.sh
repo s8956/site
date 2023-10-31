@@ -1,21 +1,30 @@
-#Requires -Version 7.2
+#!/usr/bin/bash -e
+
+(( EUID == 0 )) && { echo >&2 "This script should not be run as root!"; exit 1; }
+
+# -------------------------------------------------------------------------------------------------------------------- #
+# CONFIGURATION.
+# -------------------------------------------------------------------------------------------------------------------- #
+
+date="$( command -v date )"
+shuf="$( command -v shuf )"
+hugo="$( command -v hugo )"
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # INITIALIZATION.
 # -------------------------------------------------------------------------------------------------------------------- #
 
-function Start-Script() {
-  New-HugoPost
+init() {
+  hugo_new
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # HUGO: NEW CONTENT.
 # -------------------------------------------------------------------------------------------------------------------- #
 
-function New-HugoPost() {
-  $type = 'posts'
-
-  .\hugo.exe new "$($type)/$(Get-HugoYear)/$(Get-HugoMonth)/$(Get-HugoTimestamp)_$(Get-HugoRandom)"
+hugo_new() {
+  local type="articles"
+  ${hugo} new "${type}/$( _year )/$( _month )/$( _timestamp )_$(_random)"
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
@@ -23,31 +32,27 @@ function New-HugoPost() {
 # -------------------------------------------------------------------------------------------------------------------- #
 
 # Year.
-function Get-HugoYear() {
-  $year = "$(Get-Date -Format 'yyyy')"
-  return $year
+_year() {
+  ${date} -u '+%Y'
 }
 
 # Month.
-function Get-HugoMonth() {
-  $month = "$(Get-Date -Format 'MM')"
-  return $month
+_month() {
+  ${date} -u '+%m'
 }
 
 # Timestamp.
-function Get-HugoTimestamp() {
-  $timestamp = "$([DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds())"
-  return $timestamp
+_timestamp() {
+  echo "$(( $( ${date} -u '+%s%N' ) / 1000000 ))"
 }
 
 # Random.
-function Get-HugoRandom() {
-  $random = "$(Get-Random -Minimum 1000 -Maximum 9999)"
-  return $random
+_random() {
+  ${shuf} -i '1000-9999' -n 1 --random-source='/dev/random'
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
-# -------------------------------------------------< RUNNING SCRIPT >------------------------------------------------- #
+# -------------------------------------------------< INIT FUNCTIONS >------------------------------------------------- #
 # -------------------------------------------------------------------------------------------------------------------- #
 
-Start-Script
+init "$@"; exit 0

@@ -1,9 +1,14 @@
 main:
-  - name: 'Posts'
+  - name: 'Articles'
     pre: 'fas fa-book'
-    url: '/en/posts/'
+    url: '/en/articles/'
     identifier: 'blog'
     weight: 10
+  - name: 'Q&A'
+    pre: 'fas fa-circle-question'
+    url: '/en/qna/'
+    identifier: 'qna'
+    weight: 20
   - name: 'Archive'
     pre: 'fas fa-archive'
     url: '/en/archive/'
