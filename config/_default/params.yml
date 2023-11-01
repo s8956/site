@@ -46,6 +46,17 @@ images:
 
 organization:
   logo: 'img/logo.min.svg'
+  address:
+    city: 'Moscow'
+    region: 'Moscow Region'
+    country: 'Russia'
+  contacts:
+    type: 'customer service'
+    email: 'mail@lib.onl'
+    telephone: '+7 (000) 000-0000'
+  foundingDate: '2020'
+  sameAs:
+    - ''
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # API.
