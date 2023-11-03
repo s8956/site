@@ -41,3 +41,9 @@ main:
     identifier: 'tags'
     weight: 30
     parent: 'meta'
+  - name: 'Черновики'
+    pre: 'fas fa-file-pen'
+    url: '/ru/drafts/'
+    identifier: 'drafts'
+    weight: 40
+    parent: 'meta'

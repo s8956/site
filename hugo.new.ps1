@@ -1,5 +1,10 @@
 #Requires -Version 7.2
 
+Param(
+  [ValidateSet('articles', 'faq')]
+  [Alias('T')][string]$P_Type = 'articles'
+)
+
 # -------------------------------------------------------------------------------------------------------------------- #
 # INITIALIZATION.
 # -------------------------------------------------------------------------------------------------------------------- #
@@ -13,9 +18,7 @@ function Start-Script() {
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function New-HugoPost() {
-  $type = 'articles'
-
-  .\hugo.exe new "$($type)/$(Get-HugoYear)/$(Get-HugoMonth)/$(Get-HugoTimestamp)_$(Get-HugoRandom)"
+  .\hugo.exe new content -k "$($P_Type)" "drafts/$($P_Type)/$(Get-HugoYear)/$(Get-HugoMonth)/$(Get-HugoTimestamp)_$(Get-HugoRandom)"
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
