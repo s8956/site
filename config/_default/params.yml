@@ -3,13 +3,13 @@
 # -------------------------------------------------------------------------------------------------------------------- #
 
 home:
-  sections: ['articles']
+  sections: [ 'articles' ]
 
 content:
-  sections: ['articles', 'faq']
+  sections: [ 'articles', 'faq' ]
 
 archive:
-  sections: ['articles']
+  sections: [ 'articles' ]
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Meta.
@@ -123,17 +123,17 @@ taxonomy:
 
 node:
   cover:
+    enabled: true
     image:
-      enabled: true
       placeholder: 'https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a'
       crop: 'edges'
       fit: 'crop'
-      lg:
-        width: '1600'
-        height: '900'
-      md:
-        width: '160'
-        height: '160'
+    lg:
+      width: '1600'
+      height: '900'
+    md:
+      width: '160'
+      height: '160'
   tabs:
     source:
       enabled: false
