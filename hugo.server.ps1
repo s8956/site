@@ -1,6 +1,6 @@
 <#PSScriptInfo
   .VERSION      0.1.0
-  .GUID         ce5647fc-1e70-4205-be4e-57586095eedf
+  .GUID         efe4b366-f480-4c24-b5ac-4c0ac8073ecb
   .AUTHOR       Kitsune Solar
   .AUTHOREMAIL  mail@kitsune.solar
   .COMPANYNAME  Library Online
@@ -13,15 +13,14 @@
 
 <#
   .SYNOPSIS
-  Creating new content for Hugo.
+  Starting the Hugo server.
 
   .DESCRIPTION
-  The script allows you to create new content for Hugo.
+  The script starts the Hugo server with specific parameters.
 #>
 
 Param(
-  [ValidateSet('articles', 'faq')]
-  [Alias('T')][string]$P_Type = 'articles'
+  [Alias('P')][int]$P_Port = 1313
 )
 
 # -------------------------------------------------------------------------------------------------------------------- #
@@ -29,43 +28,15 @@ Param(
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function Start-Script() {
-  Start-HugoPost
+  Start-HugoServer
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
-# HUGO: NEW CONTENT.
+# HUGO: START SERVER.
 # -------------------------------------------------------------------------------------------------------------------- #
 
-function Start-HugoPost() {
-  .\hugo.exe new content -k "$($P_Type)" "drafts/$($P_Type)/$(Get-HugoYear)/$(Get-HugoMonth)/$(Get-HugoTimestamp)_$(Get-HugoRandom)"
-}
-
-# -------------------------------------------------------------------------------------------------------------------- #
-# ------------------------------------------------< COMMON FUNCTIONS >------------------------------------------------ #
-# -------------------------------------------------------------------------------------------------------------------- #
-
-# Year.
-function Get-HugoYear() {
-  $year = "$(Get-Date -Format 'yyyy')"
-  return $year
-}
-
-# Month.
-function Get-HugoMonth() {
-  $month = "$(Get-Date -Format 'MM')"
-  return $month
-}
-
-# Timestamp.
-function Get-HugoTimestamp() {
-  $timestamp = "$([DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds())"
-  return $timestamp
-}
-
-# Random.
-function Get-HugoRandom() {
-  $random = "$(Get-Random -Minimum 1000 -Maximum 9999)"
-  return $random
+function Start-HugoServer() {
+  .\hugo.exe server --port $P_Port --buildDrafts --printI18nWarnings --cacheDir "${PSScriptRoot}\cache" --gc
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
