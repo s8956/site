@@ -36,7 +36,12 @@ function Start-Script() {
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function Start-HugoServer() {
-  .\hugo.exe server --port $P_Port --buildDrafts --printI18nWarnings --cacheDir "${PSScriptRoot}\cache" --gc
+  .\hugo.exe server `
+    --port $P_Port `
+    --buildDrafts `
+    --printI18nWarnings `
+    --cacheDir "${PSScriptRoot}\cache" `
+    --gc
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #

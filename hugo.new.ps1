@@ -37,7 +37,9 @@ function Start-Script() {
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function Start-HugoPost() {
-  .\hugo.exe new content -k "$($P_Type)" "drafts/$($P_Type)/$(Get-HugoYear)/$(Get-HugoMonth)/$(Get-HugoTimestamp)_$(Get-HugoRandom)"
+  .\hugo.exe new content `
+    -k "$($P_Type)" `
+    "drafts/$($P_Type)/$(Get-HugoYear)/$(Get-HugoMonth)/$(Get-HugoTimestamp)_$(Get-HugoRandom)"
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
