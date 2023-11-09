@@ -9,6 +9,11 @@ main:
     url: '/en/faq/'
     identifier: 'qna'
     weight: 20
+  - name: 'Resources'
+    pre: 'fas fa-cubes'
+    url: '/en/resources/'
+    identifier: 'resources'
+    weight: 30
   - name: 'Archive'
     pre: 'fas fa-archive'
     url: '/en/archive/'
