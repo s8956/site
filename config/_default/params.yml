@@ -89,6 +89,7 @@ breadcrumb:
 search:
   internal:
     enabled: true
+    sections: [ 'articles', 'faq', 'resources' ]
   bing:
     enabled: false
   google:
@@ -115,6 +116,12 @@ taxonomy:
       size: '96px'
       icon:
         name: 'far fa-folder-open'
+        size: '2x'
+  list:
+    cover:
+      size: '96px'
+      icon:
+        name: 'far fa-file-lines'
         size: '2x'
 
 # -------------------------------------------------------------------------------------------------------------------- #
