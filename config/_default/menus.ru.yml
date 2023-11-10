@@ -1,6 +1,6 @@
 main:
   - name: 'Статьи'
-    pre: 'fas fa-book'
+    pre: 'fas fa-file-lines'
     url: '/ru/articles/'
     identifier: 'blog'
     weight: 10

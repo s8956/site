@@ -1,6 +1,6 @@
 main:
   - name: 'Articles'
-    pre: 'fas fa-book'
+    pre: 'fas fa-file-lines'
     url: '/en/articles/'
     identifier: 'blog'
     weight: 10
