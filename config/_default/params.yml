@@ -68,7 +68,7 @@ api:
     url: 'https://api.github.com'
     user: 'ghapibot'
     email: 'apibot@bk.ru'
-    token: 'Z2hwX1FyeTVvTEZjQklwY2xkenNCQWJkUmxPY0E2V2hjaTBWRXdkbg=='
+    token: 'Z2hwX1c5MzlTSW1nam9tSGVvVGJTU2xjZDVlSU9XdmRwNzF0SlNMbQ=='
   gitlab:
     url: 'https://gitlab.com/api/v4'
     user: 'glapibot'
