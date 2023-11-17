@@ -41,9 +41,3 @@ main:
     identifier: 'tags'
     weight: 30
     parent: 'meta'
-  - name: 'Drafts'
-    pre: 'fas fa-file-pen'
-    url: '/en/drafts/'
-    identifier: 'drafts'
-    weight: 40
-    parent: 'meta'
