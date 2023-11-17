@@ -42,11 +42,7 @@ function Start-Script() {
 
 function Start-HugoPost() {
   $Path = "$(Get-HugoYear)/$(Get-HugoMonth)/$(Get-HugoTimestamp)_$(Get-HugoRandom)"
-  if ($P_Type -eq 'resources') {
-    .\hugo.exe new content -k "${P_Type}" "${P_Type}/${Path}"
-  } else {
-    .\hugo.exe new content -k "${P_Type}" "drafts/${P_Type}/${Path}"
-  }
+  .\hugo.exe new content -k "${P_Type}" "${P_Type}/${Path}"
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
