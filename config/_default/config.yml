@@ -94,7 +94,7 @@ permalinks:
 
 markup:
   highlight:
-    codeFences: true
+    codeFences: false
     noClasses: false
   tableOfContents:
     endLevel: 4
