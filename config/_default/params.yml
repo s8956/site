@@ -163,7 +163,7 @@ node:
     comments:
       enabled: true
       giscus:
-        repo: 'site-0003/comments'
+        repo: 's8956/comments'
         repo_id: 'R_kgDOKgu0Tg'
         category: 'Site'
         category_id: 'DIC_kwDOKgu0Ts4CaJ2z'
