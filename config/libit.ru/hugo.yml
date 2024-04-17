@@ -2,10 +2,10 @@
 # General.
 # -------------------------------------------------------------------------------------------------------------------- #
 
-baseURL: 'https://example.com/'
+baseURL: 'https://libit.ru/'
 
 languages:
   ru:
-    title: 'Example.Com'
+    title: 'Library IT'
   en:
-    title: 'Example.Com'
+    title: 'Library IT'
