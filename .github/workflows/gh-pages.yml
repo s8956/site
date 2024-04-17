@@ -10,7 +10,7 @@ on:
 
 env:
   OWNER: '${{ github.repository_owner }}'
-  HUGO_ENV: 'lib.onl'
+  HUGO_ENV: ''
   HUGO_HOST: 'lib.onl'
 
 jobs:
