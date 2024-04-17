@@ -10,6 +10,7 @@ on:
 
 env:
   OWNER: '${{ github.repository_owner }}'
+  HUGO_ENV: 'lib.onl'
   HUGO_HOST: 'lib.onl'
 
 jobs:
@@ -34,7 +35,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
       - name: 'Build'
-        run: hugo --environment '${{ env.HUGO_HOST }}'
+        run: hugo --environment '${{ env.HUGO_ENV }}'
       - name: 'Deploy'
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
