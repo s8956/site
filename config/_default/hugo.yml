@@ -105,9 +105,6 @@ markup:
 
 minify:
   minifyOutput: true
-  tdewolff:
-    html:
-      keepWhitespace: false
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # Languages.
