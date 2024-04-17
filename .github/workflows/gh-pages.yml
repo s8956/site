@@ -33,7 +33,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
       - name: 'Build'
-        run: hugo --minify
+        run: hugo --environment 'lib.onl'
       - name: 'Deploy'
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}

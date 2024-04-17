@@ -20,7 +20,8 @@
 #>
 
 Param(
-  [Alias('P')][int]$P_Port = 1313
+  [Alias('P')][int]$P_Port = 1313,
+  [Alias('E')][string]$P_Env = 'lib.onl'
 )
 
 # -------------------------------------------------------------------------------------------------------------------- #
@@ -36,7 +37,7 @@ function Start-Script() {
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function Start-HugoServer() {
-  .\hugo.exe server `
+  .\hugo.exe server --environment "${P_Env}" `
     --port $P_Port `
     --buildDrafts `
     --printI18nWarnings `
