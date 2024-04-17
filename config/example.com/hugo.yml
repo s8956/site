@@ -7,3 +7,5 @@ baseURL: 'https://example.com/'
 languages:
   ru:
     title: 'Example.Com'
+  en:
+    title: 'Example.Com'
