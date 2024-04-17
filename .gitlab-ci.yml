@@ -4,10 +4,11 @@ variables:
   GIT_STRATEGY: clone
   GIT_SUBMODULE_STRATEGY: recursive
   GIT_SUBMODULE_UPDATE_FLAGS: --remote --jobs 4
+  HUGO_ENV: example.com
 
 pages:
   script:
-    - hugo --environment 'example.com'
+    - hugo
   artifacts:
     paths:
       - public
