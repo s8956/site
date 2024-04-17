@@ -10,6 +10,7 @@ on:
 
 env:
   OWNER: '${{ github.repository_owner }}'
+  HUGO_HOST: 'lib.onl'
 
 jobs:
   deploy:
@@ -33,7 +34,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
       - name: 'Build'
-        run: hugo --environment 'lib.onl'
+        run: hugo --environment '${{ env.HUGO_HOST }}'
       - name: 'Deploy'
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
@@ -42,6 +43,6 @@ jobs:
           external_repository: '${{ env.OWNER }}/${{ env.OWNER }}.github.io'
           publish_branch: 'main'
           publish_dir: 'public'
-          cname: 'lib.onl'
+          cname: '${{ env.HUGO_HOST }}'
           user_name: '${{ secrets.BOT_PAGES_NAME }}'
           user_email: '${{ secrets.BOT_PAGES_EMAIL }}'
