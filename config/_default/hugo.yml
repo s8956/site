@@ -96,6 +96,7 @@ markup:
   highlight:
     codeFences: true
     noClasses: false
+    lineNos: true
   tableOfContents:
     endLevel: 4
     startLevel: 2
