@@ -3,7 +3,7 @@
 ## Install site with modules
 
 ```sh
-git clone --recurse-submodules 'https://github.com/site-0003/site.git' 'lib.onl'
+git clone --recurse-submodules 'https://github.com/s8956/site.git' 'lib.onl'
 ```
 
 ## Update modules
