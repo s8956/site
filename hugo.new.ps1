@@ -1,26 +1,26 @@
 <#PSScriptInfo
-  .VERSION      0.1.0
-  .GUID         ce5647fc-1e70-4205-be4e-57586095eedf
-  .AUTHOR       Kai Kimera
-  .AUTHOREMAIL  mail@kai.kim
-  .COMPANYNAME  Library Online
-  .COPYRIGHT    2023 Library Online. All rights reserved.
-  .LICENSEURI   https://choosealicense.com/licenses/mit/
-  .PROJECTURI   https://lib.onl/
+.VERSION      0.1.0
+.GUID         ce5647fc-1e70-4205-be4e-57586095eedf
+.AUTHOR       Kai Kimera
+.AUTHOREMAIL  mail@kai.kim
+.COMPANYNAME  Library Online
+.COPYRIGHT    2023 Library Online. All rights reserved.
+.LICENSEURI   https://choosealicense.com/licenses/mit/
+.PROJECTURI   https://lib.onl/
 #>
 
 #Requires -Version 7.2
 
 <#
-  .SYNOPSIS
-  Creating new content for Hugo.
+.SYNOPSIS
+Creating new content for Hugo.
 
-  .DESCRIPTION
-  The script allows you to create new content for Hugo.
+.DESCRIPTION
+The script allows you to create new content for Hugo.
 #>
 
 # -------------------------------------------------------------------------------------------------------------------- #
-# CONFIGURATION.
+# CONFIGURATION
 # -------------------------------------------------------------------------------------------------------------------- #
 
 Param(
@@ -29,7 +29,7 @@ Param(
 )
 
 # -------------------------------------------------------------------------------------------------------------------- #
-# INITIALIZATION.
+# INITIALIZATION
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function Start-Script() {
@@ -37,7 +37,7 @@ function Start-Script() {
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
-# HUGO: NEW CONTENT.
+# HUGO: NEW CONTENT
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function Start-HugoPost() {

@@ -1,22 +1,22 @@
 <#PSScriptInfo
-  .VERSION      0.1.0
-  .GUID         efe4b366-f480-4c24-b5ac-4c0ac8073ecb
-  .AUTHOR       Kai Kimera
-  .AUTHOREMAIL  mail@kai.kim
-  .COMPANYNAME  Library Online
-  .COPYRIGHT    2023 Library Online. All rights reserved.
-  .LICENSEURI   https://choosealicense.com/licenses/mit/
-  .PROJECTURI   https://lib.onl/
+.VERSION      0.1.0
+.GUID         efe4b366-f480-4c24-b5ac-4c0ac8073ecb
+.AUTHOR       Kai Kimera
+.AUTHOREMAIL  mail@kai.kim
+.COMPANYNAME  Library Online
+.COPYRIGHT    2023 Library Online. All rights reserved.
+.LICENSEURI   https://choosealicense.com/licenses/mit/
+.PROJECTURI   https://lib.onl/
 #>
 
 #Requires -Version 7.2
 
 <#
-  .SYNOPSIS
-  Starting the Hugo server.
+.SYNOPSIS
+Starting the Hugo server.
 
-  .DESCRIPTION
-  The script starts the Hugo server with specific parameters.
+.DESCRIPTION
+The script starts the Hugo server with specific parameters.
 #>
 
 Param(
@@ -25,7 +25,7 @@ Param(
 )
 
 # -------------------------------------------------------------------------------------------------------------------- #
-# INITIALIZATION.
+# INITIALIZATION
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function Start-Script() {
@@ -33,7 +33,7 @@ function Start-Script() {
 }
 
 # -------------------------------------------------------------------------------------------------------------------- #
-# HUGO: START SERVER.
+# HUGO: START SERVER
 # -------------------------------------------------------------------------------------------------------------------- #
 
 function Start-HugoServer() {
