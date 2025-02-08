@@ -52,17 +52,13 @@ outputFormats:
     mediaType: 'application/json'
     isPlainText: true
     notAlternative: true
-  turbo:
-    baseName: 'turbo'
-    mediaType: 'application/rss+xml'
-    notAlternative: true
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # OUTPUTS
 # -------------------------------------------------------------------------------------------------------------------- #
 
 outputs:
-  home: [ 'html', 'rss', 'openSearch', 'manifest', 'search', 'turbo' ]
+  home: [ 'html', 'rss', 'openSearch', 'manifest', 'search' ]
   page: [ 'html', 'json' ]
 
 # -------------------------------------------------------------------------------------------------------------------- #
