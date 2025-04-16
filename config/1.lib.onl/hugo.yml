@@ -2,10 +2,4 @@
 # GENERAL
 # -------------------------------------------------------------------------------------------------------------------- #
 
-baseURL: 'https://libit.ru/'
-
-languages:
-  ru:
-    title: 'Library IT'
-  en:
-    title: 'Library IT'
+baseURL: 'https://1.lib.onl/'
