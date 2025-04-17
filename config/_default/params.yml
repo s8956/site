@@ -67,12 +67,12 @@ api:
   github:
     url: 'https://api.github.com'
     user: 'ghapibot'
-    email: 'apibot@bk.ru'
-    token: 'WjJod1gzZE1ZM0puVVZGUFlVVk5NVlJNWjFWR05HaERVazlMWXpSTVMxaENjakZpTTJ0V05nPT0='
+    email: ''
+    token: ''
   gitlab:
     url: 'https://gitlab.com/api/v4'
     user: 'glapibot'
-    email: 'apibot@bk.ru'
+    email: ''
     token: ''
 
 # -------------------------------------------------------------------------------------------------------------------- #
