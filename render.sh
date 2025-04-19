@@ -25,7 +25,7 @@ fi
 
 # Render sets IS_PULL_REQUEST to true for PR previews.
 if [[ "${IS_PULL_REQUEST:-}" == "true" ]]; then
-    "${XDG_CACHE_HOME}/hugo" --gc -e preview
+  "${XDG_CACHE_HOME}/hugo" --gc -e 'preview'
 else
-    "${XDG_CACHE_HOME}/hugo" --gc --minify
+  "${XDG_CACHE_HOME}/hugo" --gc -e "${HUGO_ENV}"
 fi
