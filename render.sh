@@ -7,14 +7,11 @@ TAR_NAME="hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
 hugo version # Output the OLD version.
 
 if [[ ! -f "${XDG_CACHE_HOME}/hugo" ]]; then
-  echo '...Downloading HUGO'
-  mkdir -p ~/tmp
-  wget -P ~/tmp "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${TAR_NAME}"
-  cd ~/tmp || exit
-  echo '...Extracting HUGO'
-  tar -xzvf "${TAR_NAME}"
-  echo '...Moving HUGO'
-  mv hugo "${XDG_CACHE_HOME}/hugo"
+  echo '...Downloading HUGO' && mkdir -p ~/tmp \
+    && wget -P ~/tmp "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${TAR_NAME}" \
+    && cd ~/tmp || exit
+  echo '...Extracting HUGO' && tar -xzvf "${TAR_NAME}"
+  echo '...Moving HUGO' && mv hugo "${XDG_CACHE_HOME}/hugo"
   # Make sure we return to where we were.
   cd "${HOME}/project/src" || exit
 else
@@ -26,6 +23,8 @@ fi
 # Render sets IS_PULL_REQUEST to true for PR previews.
 if [[ "${IS_PULL_REQUEST:-}" == "true" ]]; then
   "${XDG_CACHE_HOME}/hugo" --gc -e 'preview'
-else
+elif [[ -n "${HUGO_ENV}" ]]; then
   "${XDG_CACHE_HOME}/hugo" --gc -e "${HUGO_ENV}"
+else
+  "${XDG_CACHE_HOME}/hugo" --gc
 fi
